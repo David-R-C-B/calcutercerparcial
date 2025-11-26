@@ -3,3 +3,10 @@ matplotlib
 pandas
 pyperclip
 scipy
+scipy
+customtkinter
+packaging
+bcrypt
+pyotp
+qrcode
+pillow

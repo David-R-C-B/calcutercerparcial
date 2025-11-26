@@ -1,6 +1,4 @@
-import tkinter as tk
-from tkinter import ttk
-
+import customtkinter as ctk
 from gui.cellular_automata_subtab import CellularAutomataSubTab
 from gui.game_of_life_subtab import GameOfLifeSubTab
 
@@ -10,15 +8,16 @@ class AutomataMainTab:
         self._crear_ui()
 
     def _crear_ui(self):
-        self.automata_notebook = ttk.Notebook(self.parent_frame)
-        self.automata_notebook.pack(expand=True, fill="both", padx=5, pady=5)
+        self.automata_tabview = ctk.CTkTabview(self.parent_frame)
+        self.automata_tabview.pack(expand=True, fill="both", padx=5, pady=5)
+
+        self.automata_tabview.add("Autómatas 1D/2D")
+        self.automata_tabview.add("Juego de la Vida")
 
         # Sub-tab for general 1D/2D Cellular Automata
-        self.ca_frame = ttk.Frame(self.automata_notebook)
-        self.automata_notebook.add(self.ca_frame, text="Autómatas 1D/2D")
+        self.ca_frame = self.automata_tabview.tab("Autómatas 1D/2D")
         CellularAutomataSubTab(self.ca_frame)
 
         # Sub-tab for Game of Life
-        self.gol_frame = ttk.Frame(self.automata_notebook)
-        self.automata_notebook.add(self.gol_frame, text="Juego de la Vida")
+        self.gol_frame = self.automata_tabview.tab("Juego de la Vida")
         GameOfLifeSubTab(self.gol_frame)
