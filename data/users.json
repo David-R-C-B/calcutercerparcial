@@ -1,6 +1,7 @@
 {
     "david": {
         "password": "$2b$12$BI2HBuvpUWQGvtT6.TMkheGl2wWGpqEZUnj94mlUSB5mSkTWqaLeW",
-        "totp_secret": "2ASTRCX6F6YGSNICN3WLBDL5JMDI6G4F"
+        "totp_secret": "2ASTRCX6F6YGSNICN3WLBDL5JMDI6G4F",
+        "theme": "green"
     }
 }

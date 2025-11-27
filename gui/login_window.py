@@ -58,6 +58,8 @@ class LoginWindow(ctk.CTkToplevel):
 
         if success:
             self.destroy()
+            if hasattr(self.parent, 'set_current_user'):
+                self.parent.set_current_user(username)
             self.parent.deiconify() # Show main window
         else:
             messagebox.showerror("Error de Login", message)
