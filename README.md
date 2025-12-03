@@ -100,13 +100,7 @@ La interfaz ha sido diseñada con un estilo **cyberpunk**, utilizando una paleta
     python main.py
     ```
 
-## 📸 Capturas de Pantalla de la GUI
 
-*(Por favor, inserta aquí las capturas de pantalla de las diferentes pestañas de la GUI para mostrar su funcionamiento y estilo visual.)*
-
-## 📝 Bitácora de Avances por Clase
-
-*(Este espacio está reservado para documentar los avances específicos realizados en cada clase, según lo requiera el docente.)*
 
 ## 🤝 Agradecimientos y Colaboración Externa
 
